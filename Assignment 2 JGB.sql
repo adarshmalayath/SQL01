@@ -55,6 +55,32 @@ where city_id=300 and address like '%san%'  ;
 #17.display total no of employee working in department 10 having comm is null
 select count(district) from sakila.address 
 where city_id=300 and address2 is null  ;
+#18.list the employee who have joined in july
+select * from country where month(last_update)=7;
+
+#19.display day on which anil joined
+select day(last_update) from country where country_id=1;
+select dayname(last_update) from country where country_id=1;
+
+#20.display month which anil joined
+select monthname(last_update) from country where country_id=1;
+select month(last_update) from country where country_id=1;
+
+#21.display employee infoemation in ascendinng order as per date of joining
+select * from  country order by last_update;
+
+#22.display date of joining in dd-month-year format
+SELECT DATE_FORMAT(last_update,'%D-%M-%Y') from country;  
+
+#23.display no of days elapsed between todays date and hiredate of ADAMS
+select now()-last_update from country;
+
+#24.print date 15 days after todays date
+no answer
+
+#25.list employees detail have joined in year 2018
+select * from country where year(last_update)=2018;
+select * from country where year(last_update)='2018';
 
 
 
