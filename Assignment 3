@@ -1,0 +1,30 @@
+use sakila;
+select * from actor;
+select * from film;
+select * from film_actor;
+select * from inventory;
+select * from rental;
+select * from customer;
+select * from store;
+
+
+
+
+#1.display actor detail from  african egg film
+select * from actor where actor_id in(
+select actor_id from film_actor where film_id=
+(select film_id from film where title='AFRICAN EGG'));
+
+#2.display film detail in which nick work
+select * from film where film_id in
+(select film_id from film_actor where actor_id in
+(select actor_id from actor where first_name='nick' and last_name='WAHLBERG'));
+
+
+#3.display film detail in which nick works
+select distinct(a.first_name),a.last_name,f.actor_id from  film_actor f,actor a where f.actor_id=a.actor_id;
+
+#for every film 
+select store_id,count(customer_id)
+as Total_Customer from customer 
+group by store_id;
