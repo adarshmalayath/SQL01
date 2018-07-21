@@ -109,4 +109,9 @@ Insert into EMPLOYEE values (204,'Hermann','Baer','HBAER','515.123.8888','07-06-
 Insert into EMPLOYEE values (205,'Shelley','Higgins','SHIGGINS','515.123.8080','07-06-02','AC_MGR',12008,null,101,'B',110);
 Insert into EMPLOYEE values (206,'William','Gietz','WGIETZ','515.123.8181','07-06-02','AC_ACCOUNT',8300,null,205,'C',110);
 
+Insert into EMPLOYEE(EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,HIRE_DATE,JOB_ID,SALARY,COMMISSION_PCT,MANAGER_Id,MGR_grade,DEPARTMENT_ID) 
+values 
+(207,'Jaya','Bhosale','jay@gmail.com','020.1523.3345','94-09-23','IT_ANYLIST',30000,null,100,'A',60),
+(208,'Punam','Bhor','poonam@gmail.com','020.1523.3345','96-09-15','IT_ANYLIST',19999,null,100,'B',60);
+
 select * from employee;
