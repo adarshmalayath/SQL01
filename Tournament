@@ -1,0 +1,42 @@
+create database Tournament;
+
+CREATE TABLE  if not exists GROUP_INFO(
+    group_id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255),
+    PRIMARY KEY(group_id ));
+
+CREATE TABLE player (
+    player_id INT NOT NULL AUTO_INCREMENT,
+    first_name VARCHAR(50),
+last_name VARCHAR(50),
+    group_id int,
+    player_rank INT,
+    PRIMARY KEY(player_id),
+ foreign key (group_id)references GROUP_INFO(group_id)
+);
+
+CREATE TABLE game (
+    game_id INT NOT NULL AUTO_INCREMENT,
+    match_date DATE,
+    overtime TINYINT(1) NOT NULL DEFAULT 0,
+    PRIMARY KEY (game_id)
+);
+
+CREATE TABLE player_game (
+    game_id INT NOT NULL,
+    player_id INT NOT NULL,
+    player_score INT,
+    PRIMARY KEY (game_id, player_id),
+foreign key (game_id) references game(game_id),
+foreign key (player_id) references player(player_id)
+);
+
+select * from  player;
+INSERT INTO player (first_name,last_name, player_rank) 
+VALUES ('Nolan ','Ryan', 27);
+INSERT INTO player (first_name,last_name, player_rank)values
+('Jim','Sundberg', 16),('Ivan',' Rodriguez', 21);
+
+delete from player where player_id=4;
+
+
