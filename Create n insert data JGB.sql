@@ -60,7 +60,6 @@ CREATE TABLE EMPLOYEE
 	SALARY varchar(80), 
 	cOMMISSION_PCT varchar(20), 
 	MANAGER_Id varchar(60), 
-	mgr_grade varchar(60),foreign key(mgr_grade) references sal_grade(grade),
 	DEPARTMENT_ID varchar(40),foreign key(department_id) references departments(department_id)
    );
 
