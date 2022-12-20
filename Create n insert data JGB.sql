@@ -9,30 +9,29 @@ CREATE TABLE DEPARTMENTS
 select * from departments order by department_id;
 Insert into DEPARTMENTS values (10,'Administration',200,1700),(20,'Marketing',201,1800),(30,'Purchasing',114,1700);
 
-Insert into DEPARTMENTS values
- (40,'Human Resources',203,2400),
- (50,'Shipping',121,1500),
- (60,'IT',103,1400),
-(70,'Public Relations',204,2700),
- (80,'Sales',145,2500),
- (90,'Executive',100,1700),
- (100,'Finance',108,1700),
- (110,'Accounting',205,1700),
- (120,'Treasury',null,1700),
- (130,'Corporate Tax',null,1700),
- (140,'Control And Credit',null,1700),
-(150,'Shareholder Services',null,1700),
- (160,'Benefits',null,1700),
-(170,'Manufacturing',null,1700),
-(180,'Construction',null,1700),
- (190,'Contracting',null,1700),
- (200,'Operations',null,1700),
-(220,'NOC',null,1700),
-(230,'IT Helpdesk',null,1700),
-(240,'Government Sales',null,1700),
- (250,'Retail Sales',null,1700),
- (260,'Recruiting',null,1700),
-(270,'Payroll',null,1700);
+Insert into DEPARTMENTS values (40,'Human Resources',203,2400);
+ Insert into DEPARTMENTS values (50,'Shipping',121,1500);
+ Insert into DEPARTMENTS values (60,'IT',103,1400);
+Insert into DEPARTMENTS values (70,'Public Relations',204,2700);
+Insert into DEPARTMENTS values  (80,'Sales',145,2500);
+ Insert into DEPARTMENTS values (90,'Executive',100,1700);
+Insert into DEPARTMENTS values  (100,'Finance',108,1700);
+ Insert into DEPARTMENTS values (110,'Accounting',205,1700);
+Insert into DEPARTMENTS values  (120,'Treasury',null,1700);
+ Insert into DEPARTMENTS values (130,'Corporate Tax',null,1700);
+Insert into DEPARTMENTS values  (140,'Control And Credit',null,1700);
+Insert into DEPARTMENTS values (150,'Shareholder Services',null,1700);
+Insert into DEPARTMENTS values  (160,'Benefits',null,1700);
+Insert into DEPARTMENTS values (170,'Manufacturing',null,1700);
+Insert into DEPARTMENTS values (180,'Construction',null,1700);
+Insert into DEPARTMENTS values  (190,'Contracting',null,1700);
+Insert into DEPARTMENTS values  (200,'Operations',null,1700);
+Insert into DEPARTMENTS values (220,'NOC',null,1700);
+Insert into DEPARTMENTS values (230,'IT Helpdesk',null,1700);
+Insert into DEPARTMENTS values (240,'Government Sales',null,1700);
+Insert into DEPARTMENTS values  (250,'Retail Sales',null,1700);
+Insert into DEPARTMENTS values  (260,'Recruiting',null,1700);
+Insert into DEPARTMENTS values (270,'Payroll',null,1700);
 
 CREATE TABLE SAL_GRADE
    (	GRADE VARCHAR(10)primary key, 
