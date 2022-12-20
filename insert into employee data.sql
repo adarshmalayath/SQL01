@@ -1,5 +1,3 @@
-use jayashree;
-
 Insert into EMPLOYEE values (100,'Steven','King','SKING',51567,'17-06-03','AD_PRES',24000,null,null,90);
 Insert into EMPLOYEE values (101,'Neena','Kochhar','NKOCHHAR','515.123.4568','21-09-05','AD_VP',17000,null,100,90);
 Insert into EMPLOYEE values(102,'Lex','De Haan','LDEHAAN','515.123.4569','13-01-01','AD_VP',17000,null,100,90);
@@ -74,7 +72,6 @@ Insert into EMPLOYEE values(169,'Harrison','Bloom','HBLOOM','011.44.1343.829268'
 Insert into EMPLOYEE values (171,'William','Smith','WSMITH','011.44.1343.629268','23-02-07','SA_REP',7400,0.15,148,80);
  Insert into EMPLOYEE values(172,'Elizabeth','Bates','EBATES','011.44.1343.529268','24-03-07','SA_REP',7300,0.15,148,80);
 Insert into EMPLOYEE values(173,'Sundita','Kumar','SKUMAR','011.44.1343.329268','21-04-08','SA_REP',6100,0.1,148,80);
-
 Insert into EMPLOYEE values (174,'Ellen','Abel','EABEL','011.44.1644.429267','11-05-04','SA_REP',11000,0.3,149,80);
 Insert into EMPLOYEE values(175,'Alyssa','Hutton','AHUTTON','011.44.1644.429266','19-03-05','SA_REP',8800,0.25,149,80);
 Insert into EMPLOYEE values (176,'Jonathon','Taylor','JTAYLOR','011.44.1644.429265','24-03-06','SA_REP',8600,0.2,149,80);
@@ -110,5 +107,4 @@ Insert into EMPLOYEE values (205,'Shelley','Higgins','SHIGGINS','515.123.8080','
 Insert into EMPLOYEE values (206,'William','Gietz','WGIETZ','515.123.8181','07-06-02','AC_ACCOUNT',8300,null,205,110);
 Insert into EMPLOYEE values (207,'Jaya','Bhosale','jay@gmail.com','020.1523.3345','94-09-23','IT_ANYLIST',30000,null,100,60);
 Insert into EMPLOYEE values (208,'Punam','Bhor','poonam@gmail.com','020.1523.3345','96-09-15','IT_ANYLIST',19999,null,100,60);
-
 select * from employee;
