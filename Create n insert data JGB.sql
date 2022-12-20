@@ -7,8 +7,7 @@ CREATE TABLE DEPARTMENTS
 	LOCATION_ID varchar(40)
    );
 select * from departments order by department_id;
-Insert into DEPARTMENTS (DEPARTMENT_ID,DEPARTMENT_NAME,MANAGER_ID,LOCATION_ID)
- values (10,'Administration',200,1700),(20,'Marketing',201,1800),(30,'Purchasing',114,1700);
+Insert into DEPARTMENTS (DEPARTMENT_ID,DEPARTMENT_NAME,MANAGER_ID,LOCATION_ID) values (10,'Administration',200,1700),(20,'Marketing',201,1800),(30,'Purchasing',114,1700);
 
 Insert into DEPARTMENTS (DEPARTMENT_ID,DEPARTMENT_NAME,MANAGER_ID,LOCATION_ID) values
  (40,'Human Resources',203,2400),
